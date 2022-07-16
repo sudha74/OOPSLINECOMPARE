@@ -20,5 +20,17 @@ public class LineOops { double x1,x2,y1,y2;
         System.out.println("Enter y2");
         y2 = input.nextInt();
     }
+    // Now checking the equlity of two lines
+    public void equal(Double length1,Double length2){
+        Line1 = length1;
+        Line2 = length2;
+        boolean equality = Line1.equals(Line2);
+        System.out.println(equality);
+        if(!equality) {
+            System.out.println("Two lengths of the Lines are not equal");
+        } else {
+            System.out.println("Two lenths of the Lines are equal");
+        }
+    }
 
 }
